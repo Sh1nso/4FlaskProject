@@ -1,4 +1,5 @@
-from utils import PostsDAO, CommentsDAO
+from app.posts.posts_dao import PostsDAO
+from app.comments.comments_dao import CommentsDAO
 import pytest
 
 

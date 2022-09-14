@@ -1,5 +1,6 @@
 from flask import Blueprint, render_template, request
-from utils import *
+from app.comments.comments_dao import CommentsDAO
+from app.posts.posts_dao import PostsDAO
 
 
 post_blueprint = Blueprint('post_blueprint', __name__, template_folder='templates')

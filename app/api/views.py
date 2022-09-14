@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify
-from utils import *
+from app.posts.posts_dao import PostsDAO
 import logging
 
 new_logger = logging.getLogger()
