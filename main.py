@@ -2,6 +2,7 @@ from flask import Flask, render_template
 from app.main.views import main_blueprint
 from app.posts.views import post_blueprint
 from app.api.views import api_blueprint
+from app.bookmarks.views import bookmarks_blueprint
 
 
 app = Flask(__name__)
@@ -10,6 +11,7 @@ app.config['JSON_AS_ASCII'] = False
 app.register_blueprint(main_blueprint)
 app.register_blueprint(post_blueprint)
 app.register_blueprint(api_blueprint)
+app.register_blueprint(bookmarks_blueprint)
 app.static_folder = app.root_path + '/static/'
 
 
